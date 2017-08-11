@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv=Content-Type content='text/html; charset=UTF-8'>
+    <title>
+        支付倒计时
+    </title>
+    <link rel="stylesheet" href="./css/app-07d4b7dc84.css">
+    <script src="./js/jquery/1.9.1.min.js"></script>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+</head>
+<body>
+    <div id="pay_content" class="ico-content" onselectstart="return false">
+        <div class="pay-container ico-container">
+            <div class="process-content clearfix">
+            <div class="pay-part pay-part-three" style="display:block;">
+                <div class="funds-payment">
+                    <div class="part-three-header">
+                        <div class="funds-payment-left">
+                            <div class="payment-left-top">
+                                <div class="payment-left-title">您需要支付金额</div>
+                                <span class="payment-left-val">0.00</span>
+                                <span class="order-money-type"> ฿</span>
+                            </div>
+                            <div class="payment-left-bottom">
+                                <span class="payment-time-left">剩余有效支付时间</span>
+                                <input type="hidden" id="remain_time" value="">
+                                <div class="time-count-down">
+                                    <span class="time-clock time-minute-tens">3</span>
+                                    <span class="time-clock time-minute-ones">0</span>
+                                    <span class="time-point">:</span>
+                                    <span class="time-clock time-second-tens">0</span>
+                                    <span class="time-clock time-second-ones">0</span>
+                                </div>
+                                <span class="payment-tips">您必须在以上剩余时间内完成支付，否则该投资将会过期无效！</span>
+                            </div>
+                        </div>
+                        <div class="funds-payment-right">
+                            <div class="payment-right-title">支付方式</div>
+                            <div class="inline-block">
+                                <div class="payment-right-top">
+                                    <div class="payment-right-tips">您当前账户余额：
+                                        <span id="btc_symbol"> ฿</span>
+                                        <strong class="my-balance">0</strong>
+                                    </div>
+                                    <input class="payment-btc-address" id="should_pay">
+                                    </input>
+                                    <a href="javascript:" class="pay-immediately on">立即支付</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+<script src="./js/pay.js"></script>
+</html>
